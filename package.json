@@ -1,0 +1,28 @@
+{
+  "name": "defistation-pusher",
+  "version": "1.0.0",
+  "description": "This app is working for push MacaronSwap TVL data to defistation.",
+  "repository": "https://github.com/macaronswap/defistation-pusher.git",
+  "author": "chocofalls",
+  "license": "MIT",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "axios": "0.21.1",
+    "dotenv": "10.0.0",
+    "node-cron": "3.0.0",
+    "signale": "1.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "15.12.2",
+    "@types/node-cron": "2.0.3",
+    "@types/signale": "1.4.1",
+    "ts-node": "10.0.0",
+    "typescript": "4.3.2"
+  }
+}
