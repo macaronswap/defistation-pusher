@@ -39,7 +39,8 @@ const taskRunner = async () => {
         postTVLData(data)
           .then((resp: any) => {
             Signale.success(
-              `TVL data posted successfully @[${new Date().toISOString()}]`,
+              `TVL data posted successfully @[${new Date().toISOString()}]
+              Status: ${resp.status}`,
             );
           })
           .catch((e: any) => {
