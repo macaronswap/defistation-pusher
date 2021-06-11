@@ -21,7 +21,7 @@ if (clientID && clientSecret) {
 }
 
 Signale.start(`Initalized DefiStation Pusher @[${new Date().toISOString()}]`);
-Cron.schedule("* * * * *", () => {
+Cron.schedule("50 * * * *", () => {
   // Fetches data at *:50
   taskRunner();
 });
